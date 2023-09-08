@@ -6,16 +6,16 @@
    <form method="POST">
       {% csrf_token %}
       <fieldset class="form-group">
-         <legend class="border-bottom md-4">JOIN NOW</legend>
+         <legend class="border-bottom md-4">LOG IN</legend>
            {{ form | crispy }}
       </fieldset>
       <div class="form-group">
-         <button class="btn btn-outline-info" type="submit">SIGN UP</button>
+         <button class="btn btn-outline-info" type="submit">LOG IN</button>
       </div>
    </form>
    <div class="border-top pt-3">
       <small class="text-muted">
-         Already Have An Account? <a class="ml-2" href="url 'login' ">SIGN IN</a>
+         need an account <a class="ml-2" href="{% url 'register' %}">SIGN UP NOW</a>
       </small>
    </div>
 </div>
